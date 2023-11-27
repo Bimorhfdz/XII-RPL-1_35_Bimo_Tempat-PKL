@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const UserSchema = new mongoose.Schema ({ //memanggil module dan membuat schema
       nama_tempat: {
@@ -25,12 +25,6 @@ const UserSchema = new mongoose.Schema ({ //memanggil module dan membuat schema
         unique: true,
         allowNull: false,
       },
-      nama_pemilik: {
-        type: String,
-        required:[true, 'silahkan isikan nama pemilik'],
-        unique: true,
-        allowNull: false,
-      },
       nama_siswa_pkl: {
         type: String,
         required:[true, 'silahkan isikan nama siswa pkl'],
@@ -39,4 +33,4 @@ const UserSchema = new mongoose.Schema ({ //memanggil module dan membuat schema
       },
     });   
 
-module.exports = mongoose.model('User', UserSchema)
+module.exports = mongoose.model('User', UserSchema);
